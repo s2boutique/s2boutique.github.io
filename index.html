@@ -26,11 +26,11 @@
   </head>
 
   <body class="bg-primary-asset-2-color">
-    <header class="bg-color-gradient header-banner-page" data-id-scroll-action="dispatch-circle-animate">
+    <header class="bg-color-gradient header-banner-page" data-id-scroll-action="dispatch-circle-animate" data-id="desk-menu">
       <div class="container">
         <nav aria-label="main navigation" class="navbar navbar-expand-lg" role="navigation">
           <div class="container-fluid py-3">
-            <img alt="Easy4You" class="navbar-brand" src="./assets/brand/@brand-logo-x-small.png">
+            <img alt="Easy4You" class="navbar-brand cursor-pointer" data-href="about" src="./assets/svg/@brand-logo-logo-vector.svg">
             <div class="collapse justify-content-end navbar-collapse">
               <ul class="navbar-nav">
                 <li class="nav-item px-2">
@@ -40,7 +40,7 @@
                   <a class="text-white cursor-pointer nav-link navbar-item-link" data-href="depositions">Depoimentos</a>
                 </li>
                 <li class="nav-item px-2">
-                  <a class="text-white cursor-pointer nav-link navbar-item-link" data-href="faq">FAQ</a>
+                  <a class="text-white cursor-pointer nav-link navbar-item-link" data-href="faq">Perguntas frequentes</a>
                 </li>
                 <li class="nav-item px-2">
                   <a class="px-4 btn rounded-pill btn-secondary onclick-outline-color-secondary onhover-scale-0-95" aria-label="Agendar Aula Experimental" href="https://api.whatsapp.com/send/?phone=5584996760105&text&app_absent=0" rel="noopener" target="_blank" title="Agendar aula experimental">Aula Experimental</a>
@@ -48,25 +48,25 @@
               </ul>
             </div>
             <span class="text-white d-inline-block d-lg-none px-1" aria-controls="menu-mobile" data-bs-toggle="offcanvas" href="#menu-mobile" role="button"><i class="material-icons">menu</i></span>
-            <div class="bg-white max-width-md offcanvas offcanvas-end" aria-labelledby="menu-mobileLabel" id="menu-mobile" data-id="navbar-mobile" tabindex="-1">
+            <div class="bg-primary-color max-width-md offcanvas offcanvas-end" aria-labelledby="menu-mobileLabel" id="menu-mobile" data-id="navbar-mobile" tabindex="-1">
               <div class="offcanvas-header">
                 <div class="col-12 d-flex flex-row justify-items-center">
                   <span class="cursor-pointer" aria-label="Close" data-bs-dismiss="offcanvas">
                     <i class="material-icons text-black-darken-2">close</i>
                   </span>
-                  <h3 class="text-center flex-grow-1 h4">Menu</h3>
+                  <h3 class="text-center text-white flex-grow-1 h4">Menu</h3>
                 </div>
               </div>
               <nav>
-                <ul class="flex-column align-items-stretch navbar p-0">
+                <ul class="flex-column align-items-stretch navbar p-0" data-id="mob-menu">
                   <li class="d-block nav-item py-0">
-                    <a class="px-4 d-block cursor-pointer nav-link py-3 text-black-darken-2" data-bs-dismiss="offcanvas" data-mob-href="about">Sobre</a>
+                    <a class="px-4 d-block cursor-pointer nav-link py-3 text-white-darken-2" data-bs-dismiss="offcanvas" data-href="about">Sobre</a>
                   </li>
                   <li class="d-block nav-item py-0">
-                    <a class="px-4 d-block cursor-pointer nav-link py-3 text-black-darken-2" data-bs-dismiss="offcanvas" data-mob-href="depositions">Depoimentos</a>
+                    <a class="px-4 d-block cursor-pointer nav-link py-3 text-white-darken-2" data-bs-dismiss="offcanvas" data-href="depositions">Depoimentos</a>
                   </li>
                   <li class="d-block nav-item py-0">
-                    <a class="px-4 d-block cursor-pointer nav-link py-3 text-black-darken-2" data-bs-dismiss="offcanvas" data-mob-href="faq">FAQ</a>
+                    <a class="px-4 d-block cursor-pointer nav-link py-3 text-white-darken-2" data-bs-dismiss="offcanvas" data-href="faq">Perguntas frequentes</a>
                   </li>
                   <li class="d-block nav-item py-0 px-2">
                     <a class="px-4 d-block btn btn-secondary onclick-outline-color-secondary onhover-scale-0-95 py-2 rounded-pill" aria-label="Agendar Aula Experimental" href="https://api.whatsapp.com/send/?phone=5584996760105&text&app_absent=0" rel="noopener" target="_blank" title="Agendar aula experimental">Aula Experimental</a>
@@ -79,17 +79,12 @@
         <div class="banner">
           <ul class="justify-content-center d-flex align-items-center m-0 p-0 slider-container">
             <li class="text-center slide-item" data-id-slide="0">
-              <div class="text-white mb-md-0 mb-5 pb-lg-5 text-slide">
-                <span class="h5">Aprenda</span>
-                <h1 class="title text-strong h1 h2-sm">
-                  2 anos <br class="d-inline-block d-sm-none">
-                  em <br class="d-none d-sm-inline-block">
-                  apenas 2 meses
-                </h1>
-                <p class="description text-white-darken-2">
-                  Intensivo de inglês com quem entende do assunto,
-                  <br class="d-none d-sm-inline-block">direto ao ponto com
-                  aulas individuais e sem enrolação.
+              <div class="text-white mb-md-0 mb-5 px-3 pb-lg-5 text-slide">
+                <h2 class="title text-strong h2">
+                  <img src="./assets/svg/@brand-logo-text-primary.svg" alt="Aprenda 2 anos em apenas 2 meses" srcset="./assets/svg/@brand-logo-text-primary.svg" class="title-slide-image" />
+                </h2>
+                <p class="description text-center text-white-darken-2">
+                  Intensivo de inglês com quem entende do assunto, direto ao ponto com aulas individuais, sem enrolação e feito <br class="d-none d-md-inline-block" />sob medida para você!
                 </p>
               </div>
             </li>
@@ -110,9 +105,8 @@
               Você
             </h3>
             <p class="text-white text-center">
-              Acumula informações, <br>
-              partes de um conhecimento, <br>
-              (peças de um quebra-cabeça)
+              Acumula informações <br>
+              juntando peças do quebra-cabeças
             </p>
           </div>
           <div class="justify-content-center d-flex align-items-center col-md-1 flex-column flex-grow-0 py-4">
@@ -124,9 +118,9 @@
               Eu
             </h3>
             <p class="text-white text-center">
-              Contextualiza a informação, <br>e transforma em conhecimento
-              <br>
-              (monta o quebra-cabeças)
+              Contextualizo a informação <br>
+              e transformo em conhecimento<br>
+              (monto o quebra-cabeças)
             </p>
           </div>
         </div>
@@ -144,27 +138,14 @@
           <div class="text-center text-md-start align-items-center col-lg-7 col-md-6 justify-content-center mt-md-3 pt-4 pt-md-0 px-lg-3">
             <span class="text-primary-lighten-1 h4 text-strong">Marcelo</span>
             <h3 class="text-primary text-strong title">Professor de inglês</h3>
-            <p class="text-dark">
-              Olá, sou Marcelo e meus +20 anos de experiência mostram que
-              ninguém quer ficar 2 anos na escola pra sair falando o verbo "to
-              be” perfeito sem comunicar nada. Fica somente no "I'm ... I'm ..."
-              imita tudo, faz uns sons estranhos, aponta e... morre aí. Até
-              saber encontrar o banheiro assim é complicado; espero que seja um
-              bom mímico.
+            <p class="text-primary-darken-1">
+              Olá, bem-vindo! Meus +20 anos de experiência mostram que ninguém quer ficar anos na escola sem sair do "to be”. Fica somente no "I'm ... " faz uns sons estranhos, aponta e... boa sorte em achar o banheiro.
             </p>
-            <p class="text-dark">
-              Criei então meu estilo (E.A.S.Y. 4U), feito sob medida para suas
-              necessidades, a partir das suas respostas ao aprendizado continuo.
-              Só precisa aprender uma vez, sem decoreba, de forma prática para
-              toda a vida.
+            <p class="text-primary-darken-1">
+              Criei então meu estilo (E.A.S.Y. 4U) feito sob medida para você a partir das suas respostas ao aprendizado continuo. Só precisa aprender uma vez, sem decoreba, de forma prática para toda a vida.
             </p>
-            <p class="text-dark">
-              Aprenda o suficiente para comer, beber (ir ao banheiro), viajar,
-              passar no Enem, mestrado (e afins) até o mês que vem e não na
-              próxima encarnação. Fale comigo no Whats e marque uma aula
-              experimental. É gratuita, aprende um pouco de inglês, além de
-              saber onde quer chegar e quanta energia e tempo/dinheiro vai
-              precisar. Nada mal para 90 minutos de aula!
+            <p class="text-primary-darken-1">
+              Aprenda o suficiente para comer, beber (ir ao banheiro), viajar, passar no Enem, mestrado (e afins) até o mês que vem e não na próxima encarnação. Agende a aula experimental é gratuita, aprende inglês e fica sabendo onde está, onde quer chegar e quanto tempo/energia vai levar.
             </p>
           </div>
           <div class="col-12 divider my-5"></div>
@@ -190,8 +171,7 @@
             do Enem, defender teses de mestrado e doutorado aqui no Brasil. Com
             isso o aluno fica no Top 5%, ou seja, mais fluente que 95 % dos
             brasileiros.
-            <span class="text-primary-lighten-3">Fique surpreso com o seu aprendizado com no mínimo 2 encontros
-              semanais de 1 hora e meia</span>.
+            Fique surpreso com o seu aprendizado com no mínimo 2 encontros semanais.
           </p>
         </div>
       </section>
@@ -204,14 +184,7 @@
             Top 2%
           </h4>
           <p class="text-white align-self-center pe-0 pe-md-5 col-12 col-md-8">
-            Você termina o intermediário a partir de 4 meses. E com isso você
-            consegue: comunicar em inglês com falantes não nativos; fazer
-            entrevistas de emprego; assistir a filmes sem legendas; fazer
-            perguntas ao final de uma palestra; participar de vídeo conferência;
-            defender sua tese no exterior; falar ao telefone; fazer negócios.
-            Com isso você fica no Top 2% de fluência.
-            <span class="text-primary-lighten-3">Recomenda-se três encontros semanais, de uma hora e meia
-              cada</span>.
+            Você termina o intermediário a partir de 4 meses. Isso permite: comunicar em inglês com não nativos; fazer entrevistas de emprego; assistir a filmes com legendas; perguntar   em palestras; participar de vídeo conferência; defender sua tese no exterior; falar ao telefone; fazer negócios. Ao final está no Top 2% de fluência.
           </p>
         </div>
         <div class="z-index--1 circle-link circle-primary align-circle-centered" data-line-step="last">
@@ -226,9 +199,7 @@
             Review
           </span>
           <p class="text-white px-2 px-md-0 py-5 text-sm-center">
-            Revisão geral necessária para aqueles que pretendem continuar os
-            estudos, geralmente se faz menos de um mês. Em tempos de pandemia
-            (onde brasileiros não podem viajar) é o substituto do estágio.
+            Revisão geral para quem pretende continuar os estudos, geralmente se faz em um mês. Em tempos de pandemia (onde brasileiros não podem viajar) é o substituto do estágio.
           </p>
         </aside>
         <div class="col-12 divider py-3 col-md-1 d-md-inline-block"></div>
@@ -254,13 +225,7 @@
               Conversation
             </h3>
             <p class="text-white text-center align-self-center">
-              Conversation é uma aula por semana/quinzena disponível somente
-              para quem terminou no mínimo o review, já tem um bom nível na
-              língua e quer aprimorar a fala e/ou desenferrujar. Pode ser feito
-              isolado ou em conjunto com o avançado e serve para quem quer
-              manter o inglês afiado. É o único módulo que não tem um tempo
-              provável para término, você faz o quanto você precisa.
-              <span class="text-primary-lighten-3">Recomendo fazer pelo menos um mês</span>.
+              Aula semanal/quinzenal para quem já fez o review/estágio, tem um bom nível na língua e quer aprimorar a fala e/ou desenferrujar. Pode ser feito isolado sendo o único módulo que não tem um tempo provável para término, você faz o quanto você precisa. A partir de um mês.
             </p>
           </article>
           <div class="col-12 col-md-1 py-3">
@@ -273,11 +238,7 @@
               Advanced, Top 1%
             </h3>
             <p class="text-white text-center align-self-center">
-              Você termina a partir de 4 meses e comunica-se de forma plena.
-              Recomendo fazer em conjunto com o conversation, assim como passar
-              pelo <span class="text-primary-lighten-3">"estágio"</span> no
-              exterior para terminar de forma plena e chegar no
-              <span class="text-primary-lighten-3">top 1%</span>.
+              Você termina a partir de 4 meses e comunica-se de forma mais robusta. Recomendo fazer em conjunto com o conversation, assim como passar pelo "estágio" no exterior para terminar de forma plena e chegar no top 1%.
             </p>
           </article>
         </div>
@@ -300,16 +261,18 @@
           </div>
         </aside>
         <div class="align-content-center carousel-inner d-flex flex-row flex-wrap z-index-2">
-          <div class="bg-primary-color px-4 py-5 carousel-item active">
+          <div class="bg-primary-color px-4 py-5 carousel-item pb-4 pb-md-5 active">
             <div class="col-12 d-flex justify-content-center flex-wrap">
               <div class="col-12 d-flex justify-content-center align-items-center col-lg-4 col-md-6 img-container pb-4 pb-md-0">
-                <img alt="Nídia, aluna" class="rounded-pill img-asset-card" src="./assets/photos/nidia.jpeg">
+                <a href="https://api.whatsapp.com/send?phone=5584988696722" target="_blank">
+                  <img alt="Nídia, aluna" class="rounded-pill img-asset-card" src="./assets/photos/nidia.jpeg">
+                </a>
               </div>
-              <div class="col-12 col-md-6 col-lg-8">
+              <div class="col-12 col-md-6 col-lg-8 d-flex flex-column justify-content-center">
                 <h3 class="text-white text-center text-strong text-md-start">
-                  Nídia
+                  Nídia - (84) 9 8869-6722
                 </h3>
-                <h5 class="text-center text-md-start small text-primary-lighten-3">
+                <h5 class="text-center text-md-start small text-white">
                   Professora - fez o intermediário em 2018
                 </h5>
                 <p class="text-white align-self-center pe-0 pe-md-5 text-justify">
@@ -332,13 +295,15 @@
           <div class="bg-primary-color px-4 py-5 carousel-item pb-4 pb-md-5">
             <div class="col-12 d-flex justify-content-center flex-wrap">
               <div class="col-12 d-flex justify-content-center align-items-center col-lg-4 col-md-6 img-container pb-4 pb-md-0">
-                <img alt="Graça, médica" class="rounded-pill img-asset-card" src="./assets/photos/graca.jpeg">
+                <a href="https://api.whatsapp.com/send?phone=5584999852109" target="_blank">
+                  <img alt="Graça, médica" class="rounded-pill img-asset-card" src="./assets/photos/graca.jpeg">
+                </a>
               </div>
-              <div class="col-12 col-md-6 col-lg-8">
+              <div class="col-12 col-md-6 col-lg-8 d-flex flex-column justify-content-center">
                 <h3 class="text-white text-center text-strong text-md-start">
-                  Graça
+                  Graça - (84) 9 9985-2109
                 </h3>
-                <h5 class="text-center text-md-start small text-primary-lighten-3">
+                <h5 class="text-center text-md-start small text-white">
                   Médica - terminou o intermediário em 2020
                 </h5>
                 <p class="text-white align-self-center pe-0 pe-md-5 text-justify">
@@ -358,13 +323,15 @@
           <div class="bg-primary-color px-4 py-5 carousel-item pb-4 pb-md-5">
             <div class="col-12 d-flex justify-content-center flex-wrap">
               <div class="col-12 d-flex justify-content-center align-items-center col-lg-4 col-md-6 img-container pb-4 pb-md-0">
-                <img alt="Pedro, aluno" class="rounded-pill img-asset-card" src="./assets/photos/pedro.jpeg">
+                <a href="https://api.whatsapp.com/send?phone=5584991016202" target="_blank">
+                  <img alt="Pedro, aluno" class="rounded-pill img-asset-card" src="./assets/photos/pedro.jpeg">
+                </a>
               </div>
-              <div class="col-12 col-md-6 col-lg-8">
+              <div class="col-12 col-md-6 col-lg-8 d-flex flex-column justify-content-center">
                 <h3 class="text-white text-center text-strong text-md-start">
-                  Pedro
+                  Pedro - (84) 9 9101-6202
                 </h3>
-                <h5 class="text-center text-md-start small text-primary-lighten-3">
+                <h5 class="text-center text-md-start small text-white">
                   Mestrando em Planejamento Urbano - terminou o básico em 2019
                 </h5>
                 <p class="text-white align-self-center pe-0 pe-md-5 text-justify">
@@ -387,13 +354,15 @@
           <div class="bg-primary-color px-4 py-5 carousel-item pb-4 pb-md-5">
             <div class="col-12 d-flex justify-content-center flex-wrap">
               <div class="col-12 d-flex justify-content-center align-items-center col-lg-4 col-md-6 img-container pb-4 pb-md-0">
-                <img alt="Suyane, aluna" class="rounded-pill img-asset-card" src="./assets/photos/suyane.jpeg">
+                <a href="https://api.whatsapp.com/send?phone=5584991264414" target="_blank">
+                  <img alt="Suyane, aluna" class="rounded-pill img-asset-card" src="./assets/photos/suyane.jpeg">
+                </a>
               </div>
-              <div class="col-12 col-md-6 col-lg-8">
+              <div class="col-12 col-md-6 col-lg-8 d-flex flex-column justify-content-center">
                 <h3 class="text-white text-center text-strong text-md-start">
-                  Suyane
+                  Suyane - (84) 9 9126-4414
                 </h3>
-                <h5 class="text-center text-md-start small text-primary-lighten-3">
+                <h5 class="text-center text-md-start small text-white">
                   Doutoranda em comunicação - é aluna do intermediário
                 </h5>
                 <p class="text-white align-self-center pe-0 pe-md-5 text-justify">
@@ -415,13 +384,15 @@
           <div class="bg-primary-color px-4 py-5 carousel-item pb-4 pb-md-5">
             <div class="col-12 d-flex justify-content-center flex-wrap">
               <div class="col-12 d-flex justify-content-center align-items-center col-lg-4 col-md-6 img-container pb-4 pb-md-0">
-                <img alt="Mônica, aluna" class="rounded-pill img-asset-card" src="./assets/photos/monica.jpeg">
+                <a href="https://api.whatsapp.com/send?phone=5584999840180" target="_blank">
+                  <img alt="Mônica, aluna" class="rounded-pill img-asset-card" src="./assets/photos/monica.jpeg">
+                </a>
               </div>
-              <div class="col-12 col-md-6 col-lg-8">
+              <div class="col-12 col-md-6 col-lg-8 d-flex flex-column justify-content-center">
                 <h3 class="text-white text-center text-strong text-md-start">
-                  Mônica
+                  Mônica - (84) 9 9984-0180
                 </h3>
-                <h5 class="text-center text-md-start small text-primary-lighten-3">
+                <h5 class="text-center text-md-start small text-white">
                   Servidora pública federal aposentada - terminou o
                   intermediário em 2017
                 </h5>
@@ -498,7 +469,7 @@
       </section>
       <div class="col-12 divider my-5 py-2"></div>
       <section class="bg-primary-color px-4 card-with-chip rounded shadow z-index-3 py-1 py-md-5" data-id-scroll-action="faq" data-line-step="mobile">
-        <span class="chip align-centered-chip chip-primary px-3">FAQ</span>
+        <span class="chip align-centered-chip chip-primary px-3">Perguntas frequentes</span>
         <div class="justify-content-center row align-content-center pb-md-5 pb-4 py-4">
           <div class="col-12 align-self-center col-md-4 mb-4 mb-md-0 op-5 text-center">
             <i class="text-white material-icons icon-action-x-x-big">question_answer</i>
@@ -513,12 +484,7 @@
                 </h2>
                 <div class="collapse accordion-collapse" aria-labelledby="headingOne" id="collapseOne" data-bs-parent="[data-id=accordion]">
                   <div class="text-white accordion-body">
-                    Individuais sempre, geralmente no meu domicílio (e agora,
-                    também por videoconferência), com frequência mínima de dois
-                    encontros semanais de 90 minutos cada. Em dois meses, você
-                    aprende o básico (2 anos de uma escola) e serve para viagens
-                    a lazer/Enem/mestrado. Peço somente 15 minutos diários de
-                    leitura.
+                    Individuais sempre, geralmente no meu domicílio (e videoconferência), com frequência mínima de dois encontros semanais de 90 minutos cada (recomendo 3 encontros semanais). Em dois meses, você aprende o básico (o equivalente a 2 anos de uma escola) e serve para viagens a lazer/Enem/mestrado. Peço somente 15 minutos diários de leitura.
                   </div>
                 </div>
               </div>
@@ -530,8 +496,7 @@
                 </h2>
                 <div class="collapse accordion-collapse" aria-labelledby="headingTwo" id="collapseTwo" data-bs-parent="[data-id=accordion]">
                   <div class="text-white accordion-body">
-                    Todos começam do básico, quanto mais fluente, mais rápido.
-                    Comigo você adquire tempo de aprendizado.
+                    Todos começam do básico, quanto mais fluente, mais rápido. Comigo você adquire tempo de aprendizado. O tempo médio do básico é entre 25 a 50 horas aula.
                   </div>
                 </div>
               </div>
@@ -543,9 +508,7 @@
                 </h2>
                 <div class="collapse accordion-collapse" aria-labelledby="headingThree" id="collapseThree" data-bs-parent="[data-id=accordion]">
                   <div class="text-white accordion-body">
-                    O ideal é que se faça de forma contínua, não sendo possível
-                    e avisando até a véspera, mudamos o dia ou pausamos as
-                    aulas.
+                    O ideal é que se faça de forma contínua. Não sendo possível e avisando até a véspera, mudamos o dia ou pausamos as aulas.
                   </div>
                 </div>
               </div>
@@ -557,26 +520,31 @@
                 </h2>
                 <div class="collapse accordion-collapse" aria-labelledby="headingFour" id="collapseFour" data-bs-parent="[data-id=accordion]">
                   <div class="text-white accordion-body">
-                    Depende (entre outros fatores) do seu conhecimento
-                    linguístico, cultural, capacidade de aprendizado, forma de
-                    pagamento, local e o principal: sua determinação. Para saber
-                    o seu valor, precisa fazer uma aula experimental, onde
-                    analiso e faço sua previsão. O gráfico abaixo explica
-                    melhor.
+                    Depende (entre outros fatores) do seu conhecimento linguístico, cultural, capacidade de aprendizado, forma de pagamento, local e o principal: sua determinação. Para saber o seu valor precisa fazer a aula experimental onde analiso e faço sua previsão. O gráfico acima explica melhor.
                   </div>
                 </div>
               </div>
               <div class="bg-primary-color accordion-item">
                 <h2 class="accordion-header" id="headingFive">
                   <button class="text-white accordion-button accordion-title-button bg-primary-color collapsed" data-bs-target="#collapseFive" type="button" aria-controls="collapseFive" aria-expanded="false" data-bs-toggle="collapse">
-                    Se eu me esforçar, gasto menos?
+                    Se eu me esforçar gasto menos?
                   </button>
                 </h2>
                 <div class="collapse accordion-collapse" aria-labelledby="headingFive" id="collapseFive" data-bs-parent="[data-id=accordion]">
                   <div class="text-white accordion-body">
-                    Sim, bons alunos terminam antes do previsto, além de
-                    devolver o que não foi usado. Existem descontos e tudo pode
-                    ser no cartão em até 12X.
+                    Sim, bons alunos terminam antes do previsto (dou desconto a mais para isso) além de devolver o que não foi usado. Existem descontos e tudo pode ser no cartão em até 12 vezes.
+                  </div>
+                </div>
+              </div>
+              <div class="bg-primary-color accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="text-white accordion-button accordion-title-button bg-primary-color collapsed" data-bs-target="#collapseSix" type="button" aria-controls="collapseSix" aria-expanded="false" data-bs-toggle="collapse">
+                    Como é a aula experimental?
+                  </button>
+                </h2>
+                <div class="collapse accordion-collapse" aria-labelledby="headingSix" id="collapseSix" data-bs-parent="[data-id=accordion]">
+                  <div class="text-white accordion-body">
+                    É gratuita, aprende um pouco de inglês, além de saber onde quer chegar e quanto tempo/dinheiro vai precisar. Nada mal para 90 minutos de aula!
                   </div>
                 </div>
               </div>
@@ -590,12 +558,11 @@
           Agende sua <br class="d-none d-sm-inline-block">
           aula experimental
         </h3>
-        <p class="text-dark">
-          E faça parte do top 1% dos brasileiros que têm fluência real
+        <p class="text-primary-darken-1">
+          Faça parte do top 1% dos brasileiros que têm fluência real
         </p>
         <div class="col-12 divider py-3"></div>
-        <a class="rounded-pill btn btn-secondary onhover-scale-0-95 btn-lg h3 px-5" aria-label="Agendar Aula Experimental" href="https://api.whatsapp.com/send/?phone=5584996760105&text&app_absent=0" rel="noopener" target="_blank" title="Agendar aula experimental">Agendar aula</a>
-        <i class="d-block small text-dark">Aula experimental gratuíta</i>
+        <a class="rounded-pill btn btn-secondary onhover-scale-0-95 btn-lg h3 px-5" aria-label="Agendar Aula Experimental" href="https://api.whatsapp.com/send/?phone=5584996760105&text&app_absent=0" rel="noopener" target="_blank" title="Agendar aula experimental">Aula Experimental</a>
       </section>
       <div class="my-5"></div>
     </main>
@@ -609,7 +576,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"></script>
     <!-- inject:template:js -->
-    <script src="./js/budle-eb057fe266a0b5804f59.min.js"></script>
+    <script src="./js/budle-b86653cf06ded453abd0.min.js"></script>
     <!-- endinject:js -->
   </body>
 </html>
