@@ -1162,21 +1162,10 @@ body {
     background-color: #4da1f5 !important;
 }
 
-[data-line] .anouther-pseudo-line,
-[data-line] .pseudo-line {
-    background-color: #fff !important;
-}
-
 .circle-link.circle-primary {
     background-color: #fff !important;
 }
 
-.link-square-rounded {
-    height: 291.5px;
-    width: 285.312px;
-    color: #fff !important;
-    border: solid 1px !important;
-}
 
 .dflexCenter {
     margin-top: 1rem;
@@ -1184,18 +1173,5 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-
-/* [data-line-step="advanced"]::after {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    left: 50%;
-    top: 0;
-    background-color: #fff;
-    transform: translateX(-50%);
-    z-index: -1;
-} */
 
 /* Victor */
