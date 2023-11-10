@@ -830,7 +830,7 @@ body {
 .btn.btn-primary,
 .chip.chip-primary,
 .ripple-btn.ripple-primary {
-    background-color: var(--primary-color) !important;
+    background-color: var(--primary-color) ;
     color: var(--bs-white);
     outline-color: var(--primary-color)
 }
