@@ -1174,6 +1174,11 @@ body {
     align-items: center;
 }
 
+.txtLeitura {
+    font-weight: 600;
+    padding-bottom: 2rem;
+    color: #4da1f5;
+}
 
 /* 
 [data-line] .anouther-pseudo-line,
