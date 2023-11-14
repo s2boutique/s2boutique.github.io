@@ -116,8 +116,7 @@
         <ul class="justify-content-center d-flex align-items-center m-0 p-0 slider-container">
           <li class="text-center slide-item" data-id-slide="0">
             <div class="text-white mb-md-0 mb-5 pb-lg-5 px-3 text-slide">
-              <h2 class="text-center txtLeitura">Tempo de leitura 7
-                minutos</h2>
+              <h2 class="text-center txtLeitura">Leitura em 7 minutos</h2>
               <h2 class="title text-strong h2">
                 <img alt="Aprenda 2 anos em apenas 2 meses" class="title-slide-image"
                   src="assets/svg/@brand-logo-text-primary.svg" srcset="assets/svg/@brand-logo-text-primary.svg">
@@ -282,7 +281,7 @@
     <div class="col-12 divider py-3 card-with-chip mt-3">
       <span class="chip align-centered-chip chip-primary" data-line="level-tree">
         Nível 3
-        <div class="anouther-pseudo-line z-index-1"></div>
+        <div class="anouther-pseudo-line z-index-1 AjustArrowAntiga"></div>
       </span>
     </div>
 
@@ -322,6 +321,7 @@
           </p>
         </article>
       </div>
+      <div class="divArrow"></div>
     </section>
 
     <!-- ArrowDown -->
@@ -588,6 +588,7 @@
         </div>
       </div>
     </section>
+
     <div class="col-12 divider my-5 py-2"></div>
     <section class="bg-primary-color px-4 card-with-chip rounded shadow z-index-3 py-1 py-md-5"
       data-id-scroll-action="faq">
@@ -598,10 +599,34 @@
           <i class="text-white material-icons icon-action-x-x-big">question_answer</i>
         </div>
 
+
+
+
+        <!-- Victor -->
+        <style>
+          .accordion-button::before {
+            content: '\25B6';
+            /* Seta para a direita */
+            margin-right: 8px;
+            transition: transform 0.3s ease-in-out;
+            display: inline-block;
+          }
+
+          .accordion-button[aria-expanded="true"]::before {
+            transform: rotate(90deg);
+            /* Rotaciona para baixo quando expandido */
+          }
+
+          .accordion-button.collapsed::before {
+            transform: rotate(0deg);
+            /* Mantém para a direita quando recolhido */
+          }
+        </style>
+
+
         <div class="text-white align-self-center pe-0 pe-md-5 col-12 col-md-8">
           <div class="bg-primary-color accordion accordion-flush" data-id="accordion">
             <div class="bg-primary-color accordion-item">
-
               <h2 class="accordion-header" id="headingOne">
                 <button class="text-white accordion-button accordion-title-button bg-primary-color collapsed"
                   data-bs-target="#collapseOne" type="button" aria-controls="collapseOne" aria-expanded="false"
@@ -609,78 +634,91 @@
                   Como são as aulas?
                 </button>
               </h2>
-
               <div class="collapse accordion-collapse" aria-labelledby="headingOne" id="collapseOne"
                 data-bs-parent="[data-id=accordion]">
                 <div class="text-white accordion-body">
                   Individuais sempre, geralmente no meu domicílio (e videoconferência), com frequência mínima de dois
-                  encontros semanais de 90 minutos cada (recomendo 3 encontros semanais). Em dois meses, você aprende o
-                  básico (o equivalente a 2 anos de uma escola) e serve para viagens a lazer/Enem/mestrado. Peço somente
+                  encontros semanais de 90 minutos cada (recomendo 3 encontros semanais). Em dois meses, você aprende
+                  o básico (o equivalente a 2 anos de uma escola) e serve para viagens a lazer/Enem/mestrado. Peço
+                  somente
                   15 minutos diários de leitura.
                 </div>
               </div>
             </div>
+          </div>
 
+          <div class="bg-primary-color accordion accordion-flush" data-id="accordion">
             <div class="bg-primary-color accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
+              <h2 class="accordion-header" id="headingOne">
                 <button class="text-white accordion-button accordion-title-button bg-primary-color collapsed"
-                  data-bs-target="#collapseTwo" type="button" aria-controls="collapseTwo" aria-expanded="false"
+                  data-bs-target="#collapseOne" type="button" aria-controls="collapseOne" aria-expanded="false"
                   data-bs-toggle="collapse">
                   Eu já sei algo, preciso começar do básico?
                 </button>
               </h2>
-
-              <div class="collapse accordion-collapse" aria-labelledby="headingTwo" id="collapseTwo"
+              <div class="collapse accordion-collapse" aria-labelledby="headingOne" id="collapseOne"
                 data-bs-parent="[data-id=accordion]">
                 <div class="text-white accordion-body">
-                  Todos começam do básico, quanto mais fluente, mais rápido. Comigo você adquire tempo de aprendizado. O
+                  Todos começam do básico, quanto mais fluente, mais rápido. Comigo você adquire tempo de aprendizado.
+                  O
                   tempo médio do básico é entre 25 e 50 horas-aula. Caso queira fazer meu curso completo (terminar o
                   avançado), ele dura uma ano em média.
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="bg-primary-color accordion accordion-flush" data-id="accordion">
             <div class="bg-primary-color accordion-item">
-              <h2 class="accordion-header" id="headingThree">
+              <h2 class="accordion-header" id="headingOne">
                 <button class="text-white accordion-button accordion-title-button bg-primary-color collapsed"
-                  data-bs-target="#collapseThree" type="button" aria-controls="collapseThree" aria-expanded="false"
+                  data-bs-target="#collapseOne" type="button" aria-controls="collapseOne" aria-expanded="false"
                   data-bs-toggle="collapse">
                   Preciso viajar e meu horário muda sempre, como faço?
                 </button>
               </h2>
-              <div class="collapse accordion-collapse" aria-labelledby="headingThree" id="collapseThree"
+              <div class="collapse accordion-collapse" aria-labelledby="headingOne" id="collapseOne"
                 data-bs-parent="[data-id=accordion]">
                 <div class="text-white accordion-body">
-                  O ideal é que se faça de forma contínua. Não sendo possível e avisando até a véspera, mudamos o dia ou
+                  O ideal é que se faça de forma contínua. Não sendo possível e avisando até a véspera, mudamos o dia
+                  ou
                   pausamos as aulas.
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="bg-primary-color accordion accordion-flush" data-id="accordion">
             <div class="bg-primary-color accordion-item">
-              <h2 class="accordion-header" id="headingFour">
+              <h2 class="accordion-header" id="headingOne">
                 <button class="text-white accordion-button accordion-title-button bg-primary-color collapsed"
-                  data-bs-target="#collapseFour" type="button" aria-controls="collapseFour" aria-expanded="false"
+                  data-bs-target="#collapseOne" type="button" aria-controls="collapseOne" aria-expanded="false"
                   data-bs-toggle="collapse">
                   Quanto é para terminar o básico?
                 </button>
               </h2>
-              <div class="collapse accordion-collapse" aria-labelledby="headingFour" id="collapseFour"
+              <div class="collapse accordion-collapse" aria-labelledby="headingOne" id="collapseOne"
                 data-bs-parent="[data-id=accordion]">
                 <div class="text-white accordion-body">
                   Depende (entre outros fatores) do seu conhecimento linguístico, cultural, capacidade de aprendizado,
-                  forma de pagamento, local e o principal: sua determinação. Para saber seu valor, precisa fazer a aula
+                  forma de pagamento, local e o principal: sua determinação. Para saber seu valor, precisa fazer a
+                  aula
                   experimental, onde analiso e faço sua previsão. O gráfico acima explica melhor.
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="bg-primary-color accordion accordion-flush" data-id="accordion">
             <div class="bg-primary-color accordion-item">
-              <h2 class="accordion-header" id="headingFive">
+              <h2 class="accordion-header" id="headingOne">
                 <button class="text-white accordion-button accordion-title-button bg-primary-color collapsed"
-                  data-bs-target="#collapseFive" type="button" aria-controls="collapseFive" aria-expanded="false"
+                  data-bs-target="#collapseOne" type="button" aria-controls="collapseOne" aria-expanded="false"
                   data-bs-toggle="collapse">
                   Se eu me esforçar gasto menos?
                 </button>
               </h2>
-              <div class="collapse accordion-collapse" aria-labelledby="headingFive" id="collapseFive"
+              <div class="collapse accordion-collapse" aria-labelledby="headingOne" id="collapseOne"
                 data-bs-parent="[data-id=accordion]">
                 <div class="text-white accordion-body">
                   Sim, bons alunos terminam antes do previsto (dou desconto a mais para isso), além de o que não foi
@@ -688,15 +726,18 @@
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="bg-primary-color accordion accordion-flush" data-id="accordion">
             <div class="bg-primary-color accordion-item">
-              <h2 class="accordion-header" id="headingSix">
+              <h2 class="accordion-header" id="headingOne">
                 <button class="text-white accordion-button accordion-title-button bg-primary-color collapsed"
-                  data-bs-target="#collapseSix" type="button" aria-controls="collapseSix" aria-expanded="false"
+                  data-bs-target="#collapseOne" type="button" aria-controls="collapseOne" aria-expanded="false"
                   data-bs-toggle="collapse">
                   Como é a aula experimental?
                 </button>
               </h2>
-              <div class="collapse accordion-collapse" aria-labelledby="headingSix" id="collapseSix"
+              <div class="collapse accordion-collapse" aria-labelledby="headingOne" id="collapseOne"
                 data-bs-parent="[data-id=accordion]">
                 <div class="text-white accordion-body">
                   É gratuita. Você aprende um pouco de inglês, além de saber onde quer chegar e quanto tempo/dinheiro
@@ -704,15 +745,18 @@
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="bg-primary-color accordion accordion-flush" data-id="accordion">
             <div class="bg-primary-color accordion-item">
-              <h2 class="accordion-header" id="headingSeven">
+              <h2 class="accordion-header" id="headingOne">
                 <button class="text-white accordion-button accordion-title-button bg-primary-color collapsed"
-                  data-bs-target="#collapseSeven" type="button" aria-controls="collapseSeven" aria-expanded="false"
+                  data-bs-target="#collapseOne" type="button" aria-controls="collapseOne" aria-expanded="false"
                   data-bs-toggle="collapse">
                   Que tipo de aluno procuro?
                 </button>
               </h2>
-              <div class="collapse accordion-collapse" aria-labelledby="headingSeven" id="collapseSeven"
+              <div class="collapse accordion-collapse" aria-labelledby="headingOne" id="collapseOne"
                 data-bs-parent="[data-id=accordion]">
                 <div class="text-white accordion-body">
                   Aluno responsável que venha as aulas chega na hora e cumpra nosso acordo social. Se aprender inglês
@@ -724,6 +768,143 @@
           </div>
         </div>
       </div>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous"></script>
+      <!-- Victor -->
+      
+      <!-- <div class="text-white align-self-center pe-0 pe-md-5 col-12 col-md-8">
+        <div class="bg-primary-color accordion accordion-flush" data-id="accordion">
+          <div class="bg-primary-color accordion-item">
+
+            <h2 class="accordion-header" id="headingOne">
+              <button class="text-white accordion-button accordion-title-button bg-primary-color collapsed"
+                data-bs-target="#collapseOne" type="button" aria-controls="collapseOne" aria-expanded="false"
+                data-bs-toggle="collapse">
+                Como são as aulas?
+              </button>
+            </h2>
+
+            <div class="collapse accordion-collapse" aria-labelledby="headingOne" id="collapseOne"
+              data-bs-parent="[data-id=accordion]">
+              <div class="text-white accordion-body">
+                Individuais sempre, geralmente no meu domicílio (e videoconferência), com frequência mínima de dois
+                encontros semanais de 90 minutos cada (recomendo 3 encontros semanais). Em dois meses, você aprende
+                o
+                básico (o equivalente a 2 anos de uma escola) e serve para viagens a lazer/Enem/mestrado. Peço
+                somente
+                15 minutos diários de leitura.
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-primary-color accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="text-white accordion-button accordion-title-button bg-primary-color collapsed"
+                data-bs-target="#collapseTwo" type="button" aria-controls="collapseTwo" aria-expanded="false"
+                data-bs-toggle="collapse">
+                Eu já sei algo, preciso começar do básico?
+              </button>
+            </h2>
+
+            <div class="collapse accordion-collapse" aria-labelledby="headingTwo" id="collapseTwo"
+              data-bs-parent="[data-id=accordion]">
+              <div class="text-white accordion-body">
+                Todos começam do básico, quanto mais fluente, mais rápido. Comigo você adquire tempo de aprendizado.
+                O
+                tempo médio do básico é entre 25 e 50 horas-aula. Caso queira fazer meu curso completo (terminar o
+                avançado), ele dura uma ano em média.
+              </div>
+            </div>
+          </div>
+          <div class="bg-primary-color accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="text-white accordion-button accordion-title-button bg-primary-color collapsed"
+                data-bs-target="#collapseThree" type="button" aria-controls="collapseThree" aria-expanded="false"
+                data-bs-toggle="collapse">
+                Preciso viajar e meu horário muda sempre, como faço?
+              </button>
+            </h2>
+            <div class="collapse accordion-collapse" aria-labelledby="headingThree" id="collapseThree"
+              data-bs-parent="[data-id=accordion]">
+              <div class="text-white accordion-body">
+                O ideal é que se faça de forma contínua. Não sendo possível e avisando até a véspera, mudamos o dia
+                ou
+                pausamos as aulas.
+              </div>
+            </div>
+          </div>
+          <div class="bg-primary-color accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="text-white accordion-button accordion-title-button bg-primary-color collapsed"
+                data-bs-target="#collapseFour" type="button" aria-controls="collapseFour" aria-expanded="false"
+                data-bs-toggle="collapse">
+                Quanto é para terminar o básico?
+              </button>
+            </h2>
+            <div class="collapse accordion-collapse" aria-labelledby="headingFour" id="collapseFour"
+              data-bs-parent="[data-id=accordion]">
+              <div class="text-white accordion-body">
+                Depende (entre outros fatores) do seu conhecimento linguístico, cultural, capacidade de aprendizado,
+                forma de pagamento, local e o principal: sua determinação. Para saber seu valor, precisa fazer a
+                aula
+                experimental, onde analiso e faço sua previsão. O gráfico acima explica melhor.
+              </div>
+            </div>
+          </div>
+          <div class="bg-primary-color accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="text-white accordion-button accordion-title-button bg-primary-color collapsed"
+                data-bs-target="#collapseFive" type="button" aria-controls="collapseFive" aria-expanded="false"
+                data-bs-toggle="collapse">
+                Se eu me esforçar gasto menos?
+              </button>
+            </h2>
+            <div class="collapse accordion-collapse" aria-labelledby="headingFive" id="collapseFive"
+              data-bs-parent="[data-id=accordion]">
+              <div class="text-white accordion-body">
+                Sim, bons alunos terminam antes do previsto (dou desconto a mais para isso), além de o que não foi
+                usado. Existem descontos e tudo pode ser no cartão em até 12x.
+              </div>
+            </div>
+          </div>
+          <div class="bg-primary-color accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button class="text-white accordion-button accordion-title-button bg-primary-color collapsed"
+                data-bs-target="#collapseSix" type="button" aria-controls="collapseSix" aria-expanded="false"
+                data-bs-toggle="collapse">
+                Como é a aula experimental?
+              </button>
+            </h2>
+            <div class="collapse accordion-collapse" aria-labelledby="headingSix" id="collapseSix"
+              data-bs-parent="[data-id=accordion]">
+              <div class="text-white accordion-body">
+                É gratuita. Você aprende um pouco de inglês, além de saber onde quer chegar e quanto tempo/dinheiro
+                vai precisar. Nada mal para 90 minutos de aula!
+              </div>
+            </div>
+          </div>
+          <div class="bg-primary-color accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+              <button class="text-white accordion-button accordion-title-button bg-primary-color collapsed"
+                data-bs-target="#collapseSeven" type="button" aria-controls="collapseSeven" aria-expanded="false"
+                data-bs-toggle="collapse">
+                Que tipo de aluno procuro?
+              </button>
+            </h2>
+            <div class="collapse accordion-collapse" aria-labelledby="headingSeven" id="collapseSeven"
+              data-bs-parent="[data-id=accordion]">
+              <div class="text-white accordion-body">
+                Aluno responsável que venha as aulas chega na hora e cumpra nosso acordo social. Se aprender inglês
+                não é prioridade, pode ser uma questão de timing, talvez essa não seja sua hora, no entanto nunca
+                existirá tempo perfeito.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
     </section>
     <div class="col-12 divider py-5"></div>
     <section class="text-center py-1 py-md-5">
